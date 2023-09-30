@@ -1,0 +1,98 @@
+/* Base styles for larger screens */
+body {
+    margin: 0;
+    padding: 0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Ensure full viewport height */
+    background: url(image/pexels-cátia-matos-1072179.jpg);
+    /* background-color: #905353; Background color */
+    background-size:cover;
+    position:relative;
+    
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    
+    
+}
+
+.flex-item {
+    flex: 0 0 50%; /* Increased the box width */
+    margin: 10px;
+    background-color: rgba(185, 186, 167, 0.237); /* Box background color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+    border-radius: 40px;
+    overflow: hidden; /* Hide overflow content */
+    /* background: transparent; */
+    align-items: center; /* Center child items horizontally */
+
+
+    
+}
+
+.box {
+    text-align: center;
+    padding: 30px; /* Increased padding */
+    border: 1px;
+    border-radius: 100px;
+    
+}
+
+.content1 {
+    font-style: italic;
+    font-size: 40px; /* Increased font size */
+    color: #000000; /* Text color */
+    /* background: transparent; */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px; /* Increased margin */
+    /* background: transparent; */
+
+}
+
+.login-button {
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    padding: 15px 30px; /* Increased padding */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px; /* Increased font size */
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #0056b3; /* Button background color on hover */
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center items horizontally on smaller screens */
+    }
+    .flex-item {
+        flex-basis: 100%; /* Full width on smaller screens */
+    }
+
+    .box {
+        padding: 20px; /* Reduce padding on smaller screens */
+    }
+
+    .content1 {
+        font-size: 24px; /* Reduce font size on smaller screens */
+    }
+
+    .login-button {
+        padding: 12px 24px; /* Reduce padding on smaller screens */
+        font-size: 18px; /* Reduce font size on smaller screens */
+    }
+}
